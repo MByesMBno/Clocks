@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Clocks="clr-namespace:Clocks"
+             x:Class="Clocks.MainPage"
+             BackgroundColor="Black">
+    
+    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+        
+        <Clocks:Cell x:Name="decimalHours" ></Clocks:Cell>
+        <Clocks:Cell x:Name="unitHours" ></Clocks:Cell>
+        <Clocks:Demitter></Clocks:Demitter>
+        <Clocks:Cell x:Name="decimalMinutes" ></Clocks:Cell>
+        <Clocks:Cell x:Name="unitMinutes" ></Clocks:Cell>
+        <Clocks:Demitter></Clocks:Demitter>
+        <Clocks:Cell x:Name="decimalSeconds" ></Clocks:Cell>
+        <Clocks:Cell x:Name="unitSeconds" ></Clocks:Cell>
+    </StackLayout>
+</ContentPage>
